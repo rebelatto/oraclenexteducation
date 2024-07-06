@@ -1,12 +1,13 @@
 alert('Boas vindas ao Jogo do Número Secreto!');
 
-let numeroSecreto = (parseInt(Math.random()*100 + 1));
+let final = 100
+let numeroSecreto = (parseInt(Math.random()*final + 1));
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
 
 while (chute != numeroSecreto){
-	chute = prompt('Escolha o numero de 1 a 100: ');
+	chute = prompt(`Escolha o numero de 1 a ${final}: `);
 
 	if (chute == numeroSecreto){
 	 	break;
