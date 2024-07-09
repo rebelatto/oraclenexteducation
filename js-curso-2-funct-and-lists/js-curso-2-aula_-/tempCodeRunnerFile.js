@@ -1,2 +1,0 @@
-tabuada = numero * i;
-    c
