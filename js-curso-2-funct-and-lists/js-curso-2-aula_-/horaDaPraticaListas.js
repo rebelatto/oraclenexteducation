@@ -5,9 +5,7 @@ console.log(listaGenerica);
 linguagensDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
 console.log(linguagensDeProgramacao);
 // Adicione à lista linguagensDeProgramacao os seguintes elementos: 'Java', 'Ruby' e 'GoLang'.
-linguagensDeProgramacao.push('Java');
-linguagensDeProgramacao.push('Ruby');
-linguagensDeProgramacao.push('GoLang');
+linguagensDeProgramacao.push('Java', 'Ruby', 'GoLang');
 console.log(linguagensDeProgramacao);
 
 // Crie uma lista com 3 nomes e exiba no console apenas o primeiro elemento.
