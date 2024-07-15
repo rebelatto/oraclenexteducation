@@ -34,6 +34,11 @@ textarea::placeholder, :focus, textarea{
 	
 }
 
+img {
+	height: 304px;
+	width: 336px;
+}
+
 .container-encrypt{
 	display: flex;
 	flex-direction: column;
@@ -47,14 +52,22 @@ textarea::placeholder, :focus, textarea{
 
 .content-decrypt{
 	background-color: white;
-	justify-content: space-between;
 	height: 944px;
 	width: 400px;
-	border: 1px solid #ccc;
 	border-radius: 32px;
-	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
 	padding: 10px;
 	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-text{
+	height: 122px;
+	width: 336px;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
 }
 
 .btn-encrypt {
