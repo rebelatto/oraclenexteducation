@@ -1,9 +1,5 @@
 function encrypt() {
-  let encrypted = document.querySelector('textarea').value;
-  let elemento = document.getElementById('encrypted');
-  elemento.innerHTML = encrypted;
-  console.log(elemento);
-  console.log(encrypted);
+  console.log('Criptografando texto');
 }
 
 function decrypt() {

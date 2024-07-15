@@ -18,22 +18,21 @@
 	<main>
 		<div class="container-encrypt">
 			<div class="content-encrypt">
-				<textarea wrap="hard" class="input" type="text" placeholder="Digite seu Texto"></textarea>
+				<textarea clas="input" type="text" placeholder="Digite seu Texto"></textarea>
 				<div class="subtitle" id="subtitle">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 					<span class="info" aria-hidden="true">Apenas letras minúsculas e sem acento</span>
 				</div>
 				<div>
-					<button class="btn-encrypt" onclick="encrypt()"><i class="fa fa-lock"
+					<button class="btn-encrypt" onclick="decrypt()"><i class="fa fa-lock"
 							aria-hidden="true">&#160;&#160Codificar</i></button>
-					<button class="btn-decrypt" onclick="decrypt()"><i class="fa fa-unlock-alt"
+					<button class="btn-decrypt" onclick="encrypt()"><i class="fa fa-unlock-alt"
 							aria-hidden="true">&#160;&#160Descriptografar</i></button>
 				</div>
 			</div>
 		</div>
 		<div class="container-decrypt">
-			<div class="content-decrypt" id="encrypted">
-
+			<div class="content-decrypt">
 			</div>
 			<button class="btn-decrypt" onclick="copy()">Copiar</button>
 		</div>
