@@ -34,7 +34,7 @@ textarea::placeholder, :focus, textarea{
 	
 }
 
-.container-encrypt .container-decrypt{
+.container-encrypt{
 	display: flex;
 	flex-direction: column;
 }
