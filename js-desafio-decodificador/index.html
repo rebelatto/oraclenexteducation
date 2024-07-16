@@ -12,14 +12,22 @@
 
 <body>
 	<header>
-		Desafio Decodificador de Texto - T7
+		<img class="img-logo" src="./img/logo-alura.svg" alt="logo Alura" />
+		<img class="img-logo"
+			src="https://cdn2.gnarususercontent.com.br/1/1221562/b6256fa6-5fde-4cdd-a4a3-d33ebc90bb6c.png"
+			alt="logo Oracle Next Education" />
+		<strong>Decodificador de Texto - T7</strong>
 	</header>
 
 	<main>
-		<div class="container-encrypt">
-			<div class="content-encrypt">
-				<textarea wrap="hard" class="input" type="text" placeholder="Digite seu Texto"></textarea>
+
+		<div class="container-encrypt" style="background-color: bisque;">
+			container-encrypt
+			<div class="content-encrypt" style="background-color: cadetblue;">
+				content-encrypt
+				<textarea wrap=" hard" class="input" type="text" placeholder="Digite seu Texto"></textarea>
 				<div class="subtitle" id="subtitle">
+					subtitle
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 					<span class="info" aria-hidden="true">Apenas letras minúsculas e sem acento</span>
 				</div>
@@ -32,14 +40,16 @@
 			</div>
 		</div>
 		<div class="container-decrypt">
+			container-decrypt
 			<div class="content-decrypt" id="encrypted">
-				<img src="./img/error.svg">
+				content-decrypt
+				<img class="img-side" src="./img/error.svg">
 				<div class="container-text">
+					container-text
 					<h2>Nenhuma mensagem encontrada</h2>
 					<p>Digite um texto que você deseja criptografar ou descriptograr.</p>
 				</div>
 			</div>
-			<button class="btn-decrypt" onclick="copy()">Copiar</button>
 		</div>
 	</main>
 

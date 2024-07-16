@@ -14,13 +14,38 @@ main {
 }
 
 header {
-	margin: 40px;
-	font-size: 20px;
-	background-color: white;
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	background-color:#010508;
+	padding-left: 40px;
 }
 
 footer {
-	margin-top: 10px;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color:#010508;
+	color: white;
+	font-weight: bold;
+	padding: 20px;
+	bottom: 0px;
+}
+
+h2 {
+	text-align: center;
+}
+
+p{
+	font-weight: lighter;
+	color: #5b5b68;
 }
 
 textarea::placeholder, :focus, textarea{
@@ -34,23 +59,45 @@ textarea::placeholder, :focus, textarea{
 	
 }
 
-img {
+.img-side {
 	height: 304px;
 	width: 336px;
 }
 
-.container-encrypt{
-	display: flex;
-	flex-direction: column;
+.img-logo{
+	padding: 10px;
+	
 }
+
+.container{
+	max-width: 100%;
+
+}
+
+/* .container-encrypt{
+	
+}
+
+.container-decrypt{
+
+} */
+
 
 .content-encrypt {
+	display: flex;
+	width: max-content;
+	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 0 0 168px;
-	background-color: green;
+	background-color: #6bd1ff;
 }
 
-.content-decrypt{
+.container-decrypt{
+	z-index: 1000;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	bottom: 80px;
 	background-color: white;
 	height: 944px;
 	width: 400px;
@@ -58,14 +105,25 @@ img {
 	box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
 	padding: 10px;
 	margin: 10px;
-	justify-content: center;
+	justify-items: center;
 	align-items: center;
 }
 
-.content-text{
+.content-decrypt{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: white;
+}
+
+.container-text{
+	display: flex;
+	flex-direction: column;
 	height: 122px;
 	width: 336px;
-	justify-content: space-between;
+	padding: 20px;
+	gap: 10%;
 	align-items: center;
 	justify-content: center;
 }
