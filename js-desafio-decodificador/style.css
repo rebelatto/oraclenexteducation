@@ -14,32 +14,32 @@ main {
 }
 
 header {
+	background-color:#010508;
+	color: white;
 	display: flex;
 	position: relative;
 	align-items: center;
 	height: 80px;
 	width: 100%;
 	font-size: 30px;
-	color: white;
 	font-weight: bold;
-	background-color:#010508;
 	padding-left: 40px;
 }
 
 footer {
+	background-color:#010508;
+	color: white;
 	display: flex;
 	position: fixed;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	background-color:#010508;
-	color: white;
 	font-weight: bold;
 	padding: 20px;
 	bottom: 0px;
 }
 
-h2 {
+h2, p {
 	text-align: center;
 }
 
@@ -68,44 +68,44 @@ textarea::placeholder, :focus, textarea{
 	padding: 10px;
 	
 }
-
+/* 
 .container{
 	max-width: 100%;
 
+} */
+
+.container-encrypt{
+	height: 944px;
 }
 
-/* .container-encrypt{
-	
-}
-
-.container-decrypt{
+/* .container-decrypt{
 
 } */
 
 
 .content-encrypt {
+	/* background-color: #6bd1ff; */
 	display: flex;
-	width: max-content;
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 0 0 168px;
-	background-color: #6bd1ff;
 }
 
 .container-decrypt{
-	z-index: 1000;
+	background-color: white;
+	display: flex;
+	/* z-index: 1000; */
 	position: absolute;
 	top: 40px;
 	right: 40px;
 	bottom: 80px;
-	background-color: white;
 	height: 944px;
 	width: 400px;
 	border-radius: 32px;
 	box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
 	padding: 10px;
 	margin: 10px;
-	justify-items: center;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -114,18 +114,18 @@ textarea::placeholder, :focus, textarea{
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
-	background-color: white;
 }
 
 .container-text{
+	background-color: aqua;
 	display: flex;
 	flex-direction: column;
 	height: 122px;
 	width: 336px;
-	padding: 20px;
-	gap: 10%;
+	padding: 30px;
 	align-items: center;
 	justify-content: center;
+	row-gap: 8px;
 }
 
 .btn-encrypt {
