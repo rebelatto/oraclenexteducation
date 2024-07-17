@@ -48,7 +48,7 @@ p{
 	color: #5b5b68;
 }
 
-textarea::placeholder, :focus, textarea{
+textarea::placeholder, :focus, textarea, .text-decrypt{
 	color: darkblue;
 	font-size: 20px;
 	box-shadow: 0 0 0 0;
@@ -56,6 +56,7 @@ textarea::placeholder, :focus, textarea{
     outline: 0;
 	background: none;
 	width: 680px;
+	resize: none;
 	
 }
 
@@ -68,33 +69,23 @@ textarea::placeholder, :focus, textarea{
 	padding: 10px;
 	
 }
-/* 
-.container{
-	max-width: 100%;
-
-} */
 
 .container-encrypt{
 	height: 944px;
 }
-
-/* .container-decrypt{
-
-} */
-
 
 .content-encrypt {
 	/* background-color: #6bd1ff; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 0 0 0 168px;
+	margin: 0 0 0 228px;
 }
 
 .container-decrypt{
 	background-color: white;
 	display: flex;
-	/* z-index: 1000; */
+	z-index: 1000;
 	position: absolute;
 	top: 40px;
 	right: 40px;
@@ -105,19 +96,16 @@ textarea::placeholder, :focus, textarea{
 	box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
 	padding: 10px;
 	margin: 10px;
-	justify-content: center;
 	align-items: center;
 }
 
 .content-decrypt{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	padding: 20px;
 }
 
 .container-text{
-	background-color: aqua;
 	display: flex;
 	flex-direction: column;
 	height: 122px;
@@ -126,6 +114,23 @@ textarea::placeholder, :focus, textarea{
 	align-items: center;
 	justify-content: center;
 	row-gap: 8px;
+	flex-grow: initial;
+}
+
+.content-decrypt-new{
+	display: flex;
+	width: 400px;
+	height: 944px;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.text-decrypt{
+	max-height: 930px;
+	max-width: 350px;
+	padding: 5px;
+	margin: 5px;
+	flex-grow: 1;
 }
 
 .btn-encrypt {
