@@ -5,10 +5,10 @@
   }
 body{
 	background-color: #E5E5E5;
+	font-family: 'Inter';
 }
 
 main {
-	display: flex;
 	flex: row;
 	margin: 40px;
 }
@@ -30,7 +30,6 @@ footer {
 	background-color:#010508;
 	color: white;
 	display: flex;
-	position: fixed;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
@@ -45,19 +44,22 @@ h2, p {
 
 p{
 	font-weight: lighter;
-	color: #5b5b68;
+	color: #495057;
 }
 
-textarea::placeholder, :focus, textarea, .text-decrypt{
-	color: darkblue;
+textarea::placeholder, :focus, textarea{
+	color: #0A3871;
 	font-size: 20px;
-	box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 	background: none;
+	height: 288;
 	width: 680px;
 	resize: none;
-	
+}
+
+.info{
+	color: #495057;
 }
 
 .img-side {
@@ -71,15 +73,15 @@ textarea::placeholder, :focus, textarea, .text-decrypt{
 }
 
 .container-encrypt{
+	margin: 0 0 0 228px;
 	height: 944px;
 }
 
 .content-encrypt {
-	/* background-color: #6bd1ff; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 0 0 0 228px;
+	text-align: justify;
 }
 
 .container-decrypt{
@@ -89,7 +91,7 @@ textarea::placeholder, :focus, textarea, .text-decrypt{
 	position: absolute;
 	top: 40px;
 	right: 40px;
-	bottom: 80px;
+	bottom: 40px;
 	height: 944px;
 	width: 400px;
 	border-radius: 32px;
@@ -126,6 +128,8 @@ textarea::placeholder, :focus, textarea, .text-decrypt{
 }
 
 .text-decrypt{
+	font-size: 24;
+	color: #495057;
 	max-height: 930px;
 	max-width: 350px;
 	padding: 5px;
@@ -133,22 +137,33 @@ textarea::placeholder, :focus, textarea, .text-decrypt{
 	flex-grow: 1;
 }
 
+.subtitle{
+	margin-top: 10px;
+}
+.btn-container{
+	display: flex;
+	margin-top: 10px;
+	gap: 24px;
+}
+
 .btn-encrypt {
-	background-color: darkblue;
+	background-color: #0A3871;
 	color: #ffffff; 
-	padding: 10px;
+	padding: 24px;
+	height: 67;
 	width: 328px;
 	border-radius: 24px;
-	border: 2px solid darkblue;
+	border: 1px solid #0A3871;
 	font-size: 16px;
 }
 
 .btn-decrypt {
 	background-color: #D8DFE8;
-	color: darkblue;
-	padding: 10px;
+	color: #0A3871;
+	padding: 24px;
+	height: 67;
 	width: 328px;
 	border-radius: 24px;
-	border: 2px solid darkblue;
+	border: 1px solid #0A3871;
 	font-size: 16px;
 }
