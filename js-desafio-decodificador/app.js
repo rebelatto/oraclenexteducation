@@ -1,22 +1,40 @@
-function showData() {
-  let encrypted = document.querySelector('textarea').value;
+function showData(data) {
+  let encrypted = data;
   let elemento = document.getElementById('encrypted');
   elemento.innerHTML =
     `<div class="content-decrypt-new">
     <span class="text-decrypt">${encrypted}</span>` +
-    `<button class="btn-decrypt" onclick="copy()">
+    `<button class="btn-decrypt" id="btn-copy" onclick="copy()">
         Copiar
       </button></div>`;
-  console.log(elemento);
-  console.log(encrypted);
 }
 
 function encrypt() {
-  showData();
+  let text = document.querySelector('textarea').value;
+  let encrypt;
+
+  encrypt = text.replaceAll('a', 'ai');
+  encrypt = encrypt.replaceAll('e', 'enter');
+  encrypt = encrypt.replaceAll('i', 'imes');
+  encrypt = encrypt.replaceAll('o', 'ober');
+  encrypt = encrypt.replaceAll('u', 'ufat');
+
+  showData(encrypt);
 }
 
 function decrypt() {
-  console.log('Descriptografando texto');
+  let text = document.querySelector('textarea').value;
+  let decrypt;
+
+  decrypt = text.replaceAll('ufat', 'u');
+  decrypt = decrypt.replaceAll('ober', 'o');
+  decrypt = decrypt.replaceAll('imes', 'i');
+  decrypt = decrypt.replaceAll('enter', 'e');
+  decrypt = decrypt.replaceAll('ai', 'a');
+
+  showData(decrypt);
 }
 
-function convertEspecialChar() {}
+function copy() {
+  console.log('Copiar texto');
+}
