@@ -10,10 +10,10 @@ function showData(data) {
 }
 
 function encrypt() {
-  let text = document.querySelector('textarea').value;
+  let textToEncrypt = document.querySelector('textarea').value;
   let encrypt;
 
-  encrypt = text.replaceAll('a', 'ai');
+  encrypt = textToEncrypt.replaceAll('a', 'ai');
   encrypt = encrypt.replaceAll('e', 'enter');
   encrypt = encrypt.replaceAll('i', 'imes');
   encrypt = encrypt.replaceAll('o', 'ober');
@@ -23,10 +23,10 @@ function encrypt() {
 }
 
 function decrypt() {
-  let text = document.querySelector('textarea').value;
+  let textToDecrypt = document.querySelector('textarea').value;
   let decrypt;
 
-  decrypt = text.replaceAll('ufat', 'u');
+  decrypt = textToDecrypt.replaceAll('ufat', 'u');
   decrypt = decrypt.replaceAll('ober', 'o');
   decrypt = decrypt.replaceAll('imes', 'i');
   decrypt = decrypt.replaceAll('enter', 'e');
