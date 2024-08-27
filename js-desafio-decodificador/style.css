@@ -75,26 +75,28 @@ textarea::placeholder, :focus, textarea{
 }
 
 .container-encrypt{
+	display: flex;
+	flex-direction: column;
 	padding:20px;
 	margin: 0 0 0 228px;
-	height: 944px;
+	height: 900px;
 	width: 680px;
-	background-color: aqua;
 }
 
 .content-encrypt {
-	background-color: blueviolet;
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	justify-content: space-between;
 	text-align: justify;
 }
 
 .container-decrypt{
-	background-color: white;
 	display: flex;
 	z-index: 1000;
+	background-color: white;
 	position: absolute;
+	align-items: center;
 	top: 40px;
 	right: 40px;
 	bottom: 40px;
@@ -104,7 +106,6 @@ textarea::placeholder, :focus, textarea{
 	box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
 	padding: 10px;
 	margin: 10px;
-	align-items: center;
 }
 
 .content-decrypt{
@@ -148,9 +149,10 @@ textarea::placeholder, :focus, textarea{
 	padding:8px;
 }
 .btn-container{
-	background-color: coral;
 	display: flex;
 	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
 	gap: 24px;
 }
 
