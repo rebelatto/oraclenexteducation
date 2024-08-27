@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="app.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Decodificador - Alura | ONE</title>
+</head>
+
+<body>
+	<header>
+		<img class="img-logo" src="./img/logo-alura.svg" alt="logo Alura" />
+		<img class="img-logo"
+			src="https://cdn2.gnarususercontent.com.br/1/1221562/b6256fa6-5fde-4cdd-a4a3-d33ebc90bb6c.png"
+			alt="logo Oracle Next Education" />
+		<strong>Decodificador de Texto - T7</strong>
+	</header>
+
+	<main>
+
+		<div class="container-encrypt">
+			<div class="content-encrypt">
+				<textarea wrap=" hard" class="input" type="text" placeholder="Digite seu Texto"
+					maxlength="512"></textarea>
+			</div>
+			<div class="subtitle" id="subtitle">
+				<i class="fa fa-info-circle" aria-hidden="true"></i>
+				<span class="info" aria-hidden="true">Apenas letras minúsculas e sem acento</span>
+			</div>
+			<div class="btn-container">
+				<button class="btn-encrypt" onclick="encrypt()">
+					<i class="fa fa-lock" aria-hidden="true"></i> Codificar
+				</button>
+				<button class="btn-decrypt" onclick="decrypt()">
+					<i class="fa fa-unlock-alt" aria-hidden="true"></i> Descriptografar
+				</button>
+			</div>
+		</div>
+		<div class="container-decrypt" id="encrypted">
+			<div class="content-decrypt">
+				<img class="img-side" src="./img/error.svg">
+				<div class="container-text">
+					<h2>Nenhuma mensagem encontrada</h2>
+					<p>Digite um texto que você deseja criptografar ou descriptograr.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		Jonison Rebelatto Moura Barbosa - 2024
+	</footer>
+</body>
+
+</html>
